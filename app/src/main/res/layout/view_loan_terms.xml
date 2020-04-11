@@ -13,14 +13,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="24dp"
-        android:text="Applicant Details" />
-
-    <com.example.app_loans.components.FieldView
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:field_label="Name"
-        tools:field_value="Devesh" />
+        android:text="Loan Terms" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,15 +24,36 @@
         <com.example.app_loans.components.FieldView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:field_label="Date of Birth"
-            tools:field_value="14th May 1997" />
+            tools:field_label="Duration "
+            tools:field_value="2 years" />
 
         <com.example.app_loans.components.FieldView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            tools:field_label="Phone number"
-            tools:field_value="7022209295" />
+            tools:field_label="Interest Rate"
+            tools:field_value="12% per year" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <com.example.app_loans.components.FieldView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:field_label="Loan Amount"
+            tools:field_value="50,000" />
+
+        <com.example.app_loans.components.FieldView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:field_label="Loan Product"
+            tools:field_value="Shed Construction" />
 
     </LinearLayout>
 
