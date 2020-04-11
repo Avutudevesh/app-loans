@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Loan Terms"
+        android:text="Repayment Schedule"
         android:textColor="@android:color/black"
         android:textSize="24dp" />
 
@@ -23,37 +23,17 @@
         <com.example.app_loans.components.FieldView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:field_label="Duration "
-            tools:field_value="2 years" />
+            tools:field_label="Date"
+            tools:field_value="2nd April 2020" />
 
         <com.example.app_loans.components.FieldView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            tools:field_label="Interest Rate"
-            tools:field_value="12% per year" />
+            tools:field_label="Amount"
+            tools:field_value="Rs 1000" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal">
-
-        <com.example.app_loans.components.FieldView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:field_label="Loan Amount"
-            tools:field_value="50,000" />
-
-        <com.example.app_loans.components.FieldView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            tools:field_label="Loan Product"
-            tools:field_value="Shed Construction" />
-
-    </LinearLayout>
 
 </LinearLayout>
