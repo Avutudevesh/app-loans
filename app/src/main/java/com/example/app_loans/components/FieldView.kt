@@ -27,5 +27,13 @@ class FieldView @JvmOverloads constructor(
         attributes.recycle()
     }
 
+    fun setFieldLabel(label:String) {
+        labelText.text = label
+    }
+
+    fun setFieldValue(value: String) {
+        valueText.text = value
+    }
+
 
 }

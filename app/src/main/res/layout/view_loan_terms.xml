@@ -21,12 +21,14 @@
         android:orientation="horizontal">
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/loan_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:field_label="Duration "
             tools:field_value="2 years" />
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/loan_interest_rate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -42,12 +44,14 @@
         android:orientation="horizontal">
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/loan_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:field_label="Loan Amount"
             tools:field_value="50,000" />
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/loan_product"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

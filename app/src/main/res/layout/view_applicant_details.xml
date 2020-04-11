@@ -15,6 +15,7 @@
         android:textSize="24dp" />
 
     <com.example.app_loans.components.FieldView
+        android:id="@+id/applicant_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -28,12 +29,14 @@
         android:orientation="horizontal">
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/applicant_dob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:field_label="Date of Birth"
             tools:field_value="14th May 1997" />
 
         <com.example.app_loans.components.FieldView
+            android:id="@+id/applicant_mobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

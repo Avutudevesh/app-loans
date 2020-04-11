@@ -22,7 +22,6 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/rounded_drawable"
         android:outlineProvider="background"
-        app:layout_constraintEnd_toStarOf="@+id/borrower_info"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/borrower_info"
         tools:src="@tools:sample/avatars" />
@@ -40,6 +39,7 @@
         app:layout_constraintStart_toEndOf="@+id/borrower_location_image">
 
         <TextView
+            android:id="@+id/borrower_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
@@ -47,6 +47,7 @@
             tools:text="Bimala Devi (Female,47)" />
 
         <TextView
+            android:id="@+id/borrower_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"

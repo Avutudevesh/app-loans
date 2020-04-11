@@ -12,21 +12,25 @@
         tools:context=".MainActivity">
 
         <com.example.app_loans.components.BorrowerLocationView
+            android:id="@+id/borrower_location_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <com.example.app_loans.components.ApplicantDetailsView
+            android:id="@+id/applicant_details_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp" />
 
         <com.example.app_loans.components.LoanTermsView
+            android:id="@+id/loan_terms_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp" />
 
         <com.example.app_loans.components.RepaymentScheduleView
+            android:id="@+id/repayment_schedule_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp" />
