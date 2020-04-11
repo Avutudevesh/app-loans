@@ -3,8 +3,10 @@ package com.example.app_loans.components
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.app_loans.BorrowerLocation
 import com.example.app_loans.CoverImage
 import com.example.app_loans.R
@@ -17,11 +19,26 @@ class BorrowerLocationView @JvmOverloads constructor(
         orientation = VERTICAL
     }
 
+    private lateinit var borrowerNameTextView: TextView
+    private lateinit var borrowerAddressTextView: TextView
+    private lateinit var coverImageView: ImageView
+    private lateinit var borrowerLocationImage: ImageView
+
     fun setViewData(locationData: BorrowerLocation, coverImage: CoverImage) {
-        val borrowerNameTextView = findViewById<TextView>(R.id.borrower_name)
-        val borrowerAddressTextView = findViewById<TextView>(R.id.borrower_address)
+        borrowerNameTextView = findViewById(R.id.borrower_name)
+        borrowerAddressTextView = findViewById(R.id.borrower_address)
+        coverImageView = findViewById(R.id.cover_image)
+        borrowerLocationImage = findViewById(R.id.borrower_location_image)
+
         borrowerNameTextView.text = coverImage.label
         borrowerAddressTextView.text = locationData.address
+        Glide.with(this).load(coverImage.url).into(coverImageView)
+        loadMapImage(locationData.lat, locationData.lng)
+    }
 
+    fun loadMapImage(lat: Double, lng: Double) {
+        val url =
+            "https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng&zoom=12&size=400x400&key=AIzaSyANlZwYfirV5j2_XeSASQLkk4t0Eos3ffY"
+        Glide.with(this).load(url).into(borrowerLocationImage)
     }
 }
