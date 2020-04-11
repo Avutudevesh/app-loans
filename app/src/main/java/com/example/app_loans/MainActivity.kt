@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         borrowerLocationView.setViewData(loanDetails.borrowerLocation,loanDetails.image)
         applicantDetailsView.setViewData(loanDetails.applicantDetails)
         loanTermsView.setViewData(loanDetails.loanTerms)
+        repaymentScheduleView.setViewData(loanDetails.repaymentSchedule)
     }
 
     private fun fetchLoanDetails(): LoanDetails {
