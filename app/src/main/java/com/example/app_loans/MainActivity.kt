@@ -26,11 +26,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadViews(loanDetails: LoanDetails) {
+        supportActionBar?.title = loanDetails.title
         borrowerLocationView = findViewById(R.id.borrower_location_view)
         applicantDetailsView = findViewById(R.id.applicant_details_view)
         loanTermsView = findViewById(R.id.loan_terms_view)
         repaymentScheduleView = findViewById(R.id.repayment_schedule_view)
-        borrowerLocationView.setViewData(loanDetails.borrowerLocation,loanDetails.image)
+        borrowerLocationView.setViewData(loanDetails.borrowerLocation, loanDetails.image)
         applicantDetailsView.setViewData(loanDetails.applicantDetails)
         loanTermsView.setViewData(loanDetails.loanTerms)
         repaymentScheduleView.setViewData(loanDetails.repaymentSchedule)
