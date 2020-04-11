@@ -15,16 +15,22 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/backgrounds/scenic" />
 
-    <ImageView
-        android:id="@+id/borrower_location_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/borrower_location_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="@drawable/rounded_drawable"
-        android:outlineProvider="background"
+        app:cardCornerRadius="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/borrower_info"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="@id/borrower_info">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/borrower_location_image"
+            tools:src="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
 
     <LinearLayout
         android:id="@+id/borrower_info"
@@ -36,12 +42,13 @@
         android:paddingBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/cover_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/borrower_location_image">
+        app:layout_constraintStart_toEndOf="@+id/borrower_location_card">
 
         <TextView
             android:id="@+id/borrower_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_bold"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             tools:text="Bimala Devi (Female,47)" />
@@ -50,8 +57,9 @@
             android:id="@+id/borrower_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
             android:textColor="@android:color/white"
-            android:textSize="16dp"
+            android:textSize="14dp"
             tools:text="105/9 Arihant Vihar, Near Uttarakhand Public Service Commission, Haridwar, Uttarakhand" />
 
     </LinearLayout>

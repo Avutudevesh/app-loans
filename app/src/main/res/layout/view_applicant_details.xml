@@ -11,8 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Applicant Details"
+        android:fontFamily="@font/roboto_slab_bold"
         android:textColor="@android:color/black"
-        android:textSize="24dp" />
+        android:textSize="16dp" />
 
     <com.example.app_loans.components.FieldView
         android:id="@+id/applicant_name"
@@ -22,11 +23,11 @@
         tools:field_label="Name"
         tools:field_value="Devesh" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:orientation="horizontal">
+        android:layout_marginEnd="36dp">
 
         <com.example.app_loans.components.FieldView
             android:id="@+id/applicant_dob"
@@ -39,10 +40,10 @@
             android:id="@+id/applicant_mobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
             tools:field_label="Phone number"
             tools:field_value="7022209295" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

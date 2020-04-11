@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repayment_schedule"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
 
 
     <com.example.app_loans.components.FieldView
@@ -17,9 +18,10 @@
         android:id="@+id/repayment_amount_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentEnd="true"
         tools:field_label="Amount"
-        tools:field_value="Rs 1000" />
+        tools:field_value="Rs 1000"
+        android:layout_marginBottom="8dp"/>
 
-</LinearLayout>
+</RelativeLayout>
 
