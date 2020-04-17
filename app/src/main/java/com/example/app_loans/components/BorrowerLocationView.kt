@@ -41,7 +41,7 @@ class BorrowerLocationView @JvmOverloads constructor(
 
     private fun loadMapImage(lat: Double, lng: Double) {
         val url =
-            "https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng&zoom=16&size=400x400&key=AIzaSyANlZwYfirV5j2_XeSASQLkk4t0Eos3ffY"
+            "https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng&zoom=16&size=400x400&key={GOOGLE_API_KEY}"
         Glide.with(this)
             .load(url)
             .error(R.drawable.error_placeholder)
